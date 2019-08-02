@@ -1,5 +1,7 @@
 # Development Container
-FROM python:3
+FROM python:rc-slim
+RUN apt-get update
+RUN apt-get install -y --no-install-recommends build-essential gcc
 
 # BDD testing framework
 RUN pip install --no-cache-dir behave
