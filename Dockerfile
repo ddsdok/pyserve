@@ -8,6 +8,7 @@ RUN pip install --no-cache-dir behave
 
 # Install gRPC related packages
 RUN pip install --no-cache-dir grpcio
+RUN pip install --no-cache-dir protobuf
 
 # Install GraphQL client
 RUN pip install --no-cache-dir graphqlclient
